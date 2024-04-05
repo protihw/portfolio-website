@@ -14,6 +14,7 @@ a {
 
 a:hover {
     color: lightslategray;
+    font-size: 1rem;
 }
 
 body {
@@ -25,17 +26,50 @@ body {
     overflow: hidden;
 }
 
+header {
+    width: 8vw;
+}
+
 header>nav>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: white;
     background-color: #333;
-    width: 8vw;
+    width: 100%;
     height: 90vh;
     padding: 5vh 0;
     text-align: center;
     font-size: .9rem;
+}
+
+#main_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 92vw;
+    height: 90vh;
+    justify-content: space-between;
+    margin: 5vh -10vw;
+}
+
+#profile_image {
+    background-color: #333;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#profile_image>div {
+    width: 100%;
+    height: 100%;
+    background-image: url("./imgs/profile-image.jpeg");
+    background-size: 130%;
+    background-position: 65% 50%;
+    border-radius: 50%;
 }
 
 footer>div {
