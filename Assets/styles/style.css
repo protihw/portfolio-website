@@ -14,7 +14,7 @@ a {
 
 a:hover {
     color: lightslategray;
-    font-size: 1rem;
+    font-size: .95rem;
 }
 
 p {
@@ -69,7 +69,7 @@ header>nav>div {
 #profile_image>div {
     width: 100%;
     height: 100%;
-    background-image: url("./imgs/profile-image.jpeg");
+    background-image: url("../imgs/profile-image.jpeg");
     background-size: 130%;
     background-position: 65% 50%;
     border-radius: 50%;
