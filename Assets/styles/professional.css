@@ -78,6 +78,7 @@ header>nav>div {
 }
 
 .background_image {
+    position: relative;
     max-width: 30vh;
     max-height: 60vh;
     background-color: #333;
@@ -87,16 +88,27 @@ header>nav>div {
     padding: 1vh;
 }
 
-/* Image Factory Escape */
+/* Iframe Factory Escape */
 
-#main_content>div:nth-child(2)>div{
+#main_content>div:nth-child(2)>iframe{
+    position: absolute;
     width: 95%;
     height: 95%;
-    background-image: url("");
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    text-align: center;
+    border-radius: 2.5%;
 }
 
 /* Image Flappy Bird */
 #main_content>div:nth-child(4)>div{
+    width: 95%;
+    height: 95%;
+    background-color: red;
+    background-image: url("../imgs/flappybud-image.jpg");
+    background-size: 280px;
+    background-position: 100% 10%;
+    border-radius: 2.5%;
 }
 
 /* Image Severino Game */
