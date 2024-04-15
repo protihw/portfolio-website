@@ -45,77 +45,53 @@ header>nav>div {
 }
 
 #main_content {
-    display: grid;
-    grid-template-columns: repeat(2, 30vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     position: absolute;
     top: 0;
     right: 0;
     width: 92vw;
     padding: 5vh 15vw;
-    row-gap: 10vh;
 }
 
-#main_content>div {
-    max-width: 30vw;
-    background-color: #333;
-    color: white;
-    border-style: outset;
-    border-color: grey;
-    border-radius: 10px 20px;
-    padding: 1vh;
-}
-
-#main_content>div>h1 {
+#main_content>section>div {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    width: 40vw;
 }
 
-#main_content>div>p {
-    text-align: justify;
-    line-height: 1.8rem;
-    letter-spacing: 0.125px;
+
+.skill_icon {
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
 }
 
-.background_image {
-    position: relative;
-    max-width: 30vh;
-    max-height: 60vh;
+.skill_bar {
+    width: 30vw;
+    height: 3vh;
+    background-color: grey;
+    border: 3px solid;
+    border-color: #333;
+    border-radius: 10px;
+}
+
+/* Python Icon */
+
+#content1>div:nth-child(1)>div:nth-child(1) {
+    background-image: url("../icons/python.png");
+}
+
+/* Python Skill Bar */
+
+#content1>div:nth-child(1)>div:nth-child(2) {
+    width: 60%;
+    height: 100%;
     background-color: #333;
-    border-style: outset;
-    border-color: grey;
-    border-radius: 10px 20px;
-    padding: 1vh;
-}
-
-/* Iframe Factory Escape */
-
-#main_content>div:nth-child(2)>iframe{
-    position: absolute;
-    width: 95%;
-    height: 95%;
-    margin: auto;
-    top: 0; bottom: 0; left: 0; right: 0;
-    text-align: center;
-    border-radius: 2.5%;
-}
-
-/* Image Flappy Bird */
-#main_content>div:nth-child(4)>div{
-    position: absolute;
-    width: 95%;
-    height: 95%;
-    margin: 0 auto;
-    left: 0; right: 0;
-    background-color: red;
-    background-image: url("../imgs/flappybud-image.jpg");
-    background-size: 280px;
-    background-position: 100% 10%;
-    border-radius: 2.5%;
-}
-
-/* Image Severino Game */
-#main_content>div:nth-child(6)>div{
 }
 
 footer>div {
