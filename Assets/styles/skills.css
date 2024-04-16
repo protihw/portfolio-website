@@ -58,7 +58,6 @@ header>nav>div {
 
 #main_content>section>div {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 40vw;
@@ -82,14 +81,74 @@ header>nav>div {
 
 /* Python Icon */
 
-#content1>div:nth-child(1)>div:nth-child(1) {
+#content1>div:nth-child(1)>div:nth-child(1){
     background-image: url("../icons/python.png");
 }
 
 /* Python Skill Bar */
 
-#content1>div:nth-child(1)>div:nth-child(2) {
+#content1>div:nth-child(1)>div:nth-child(3)>div {
     width: 60%;
+    height: 100%;
+    background-color: #333;
+}
+
+/* C# Icon */
+#content1>div:nth-child(2)>div:nth-child(1) {
+    background-image: url("../icons/c-.png");
+}
+
+/* C# Skill Bar*/
+#content1>div:nth-child(2)>div:nth-child(3)>div {
+    width: 50%;
+    height: 100%;
+    background-color: #333;
+}
+
+/* JavaScript Icon */
+#content1>div:nth-child(3)>div:nth-child(1) {
+    background-image: url("../icons/js.png");
+}
+
+/* JavaScript Skill Bar*/
+#content1>div:nth-child(3)>div:nth-child(3)>div {
+    width: 25%;
+    height: 100%;
+    background-color: #333;
+}
+
+/* HTML Icon */
+#content1>div:nth-child(4)>div:nth-child(1) {
+    background-image: url("../icons/html.png");
+}
+
+/* HTML Skill Bar*/
+#content1>div:nth-child(4)>div:nth-child(3)>div {
+    width: 45%;
+    height: 100%;
+    background-color: #333;
+}
+
+/* CSS Icon */
+#content1>div:nth-child(5)>div:nth-child(1) {
+    background-image: url("../icons/css-3.png");
+}
+
+/* CSS Skill Bar*/
+#content1>div:nth-child(5)>div:nth-child(3)>div {
+    width: 40%;
+    height: 100%;
+    background-color: #333;
+}
+
+/* UNITY Icon */
+#content1>div:nth-child(6)>div:nth-child(1) {
+    background-image: url("../icons/unity.png");
+}
+
+/* UNITY Skill Bar*/
+#content1>div:nth-child(6)>div:nth-child(3)>div {
+    width: 70%;
     height: 100%;
     background-color: #333;
 }
