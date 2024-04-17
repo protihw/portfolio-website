@@ -94,7 +94,7 @@ footer>div {
     #main_content {
         flex-direction: column;
         position: static;
-        margin: 0 auto;
+        margin: 3vh auto;
     }
 
     header>nav>div {

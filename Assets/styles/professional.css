@@ -162,7 +162,7 @@ footer>div {
         display: flex;
         flex-direction: column;
         position: static;
-        margin: 5vh auto;
+        margin: 3vh auto;
     }
 
     header>nav>div {
