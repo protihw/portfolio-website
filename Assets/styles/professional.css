@@ -21,7 +21,13 @@ p {
     margin: 1vh 0;
 }
 
-body {
+
+li {
+    list-style-type: none;
+}
+
+body,
+html {
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -29,6 +35,14 @@ body {
     line-height: 1.8rem;
     overflow-x: hidden;
 }
+
+#about_me_icon,
+#academical_icon,
+#professional_icon,
+#skills_icon {
+    display: none;
+}
+
 
 header>nav>div {
     display: flex;
@@ -42,6 +56,7 @@ header>nav>div {
     padding: 5vh 0;
     text-align: center;
     font-size: .9rem;
+    z-index: 100;
 }
 
 #main_content {
@@ -57,8 +72,8 @@ header>nav>div {
 }
 
 #main_content>div {
-    max-width: 30vw;
     background-color: #333;
+    max-height: 50vh;
     color: white;
     border-style: outset;
     border-color: grey;
@@ -79,8 +94,6 @@ header>nav>div {
 
 .background_image {
     position: relative;
-    max-width: 30vh;
-    max-height: 60vh;
     background-color: #333;
     border-style: outset;
     border-color: grey;
@@ -90,23 +103,27 @@ header>nav>div {
 
 /* Iframe Factory Escape */
 
-#main_content>div:nth-child(2)>iframe{
+#main_content>div:nth-child(2)>iframe {
     position: absolute;
     width: 95%;
     height: 95%;
     margin: auto;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
     border-radius: 2.5%;
 }
 
 /* Image Flappy Bird */
-#main_content>div:nth-child(4)>div{
+#main_content>div:nth-child(4)>div {
     position: absolute;
     width: 95%;
     height: 95%;
     margin: 0 auto;
-    left: 0; right: 0;
+    left: 0;
+    right: 0;
     background-color: red;
     background-image: url("../imgs/flappybud-image.jpg");
     background-size: 280px;
@@ -115,7 +132,18 @@ header>nav>div {
 }
 
 /* Image Severino Game */
-#main_content>div:nth-child(6)>div{
+#main_content>div:nth-child(6)>div {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: red;
+    background-image: url("../imgs/severino-image.jpg");
+    background-size: 575px;
+    background-position: 80% 50%;
+    border-radius: 2.5%;
 }
 
 footer>div {
@@ -126,4 +154,52 @@ footer>div {
     position: fixed;
     text-align: center;
     font-size: .7rem;
+    z-index: 100;
+}
+
+@media (max-width: 1100px) {
+    #main_content {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        margin: 5vh auto;
+    }
+
+    header>nav>div {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 6vw;
+        padding: 1vh 0;
+        font-size: .9rem;
+        align-items: center;
+    }
+
+    header>nav>div>ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 0 5vh;
+    }
+
+    .background_image {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 590px) {
+
+    #about_me_text,
+    #academical_text,
+    #professional_text,
+    #skills_text {
+        display: none;
+    }
+
+    #about_me_icon,
+    #academical_icon,
+    #professional_icon,
+    #skills_icon {
+        display: block;
+    }
 }

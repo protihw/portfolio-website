@@ -25,7 +25,8 @@ li {
     list-style-type: none;
 }
 
-body, html {
+body,
+html {
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -106,14 +107,14 @@ footer>div {
     header>nav>div {
         display: flex;
         flex-direction: row;
-        width: auto;
-        height: 8vw;
+        width: 100vw;
+        height: 6vw;
         padding: 1vh 0;
         font-size: .9rem;
         align-items: center;
     }
 
-    header>nav>div>ul{
+    header>nav>div>ul {
         display: flex;
         justify-content: space-between;
         gap: 1rem;
@@ -122,6 +123,7 @@ footer>div {
 }
 
 @media (max-width: 590px) {
+
     #about_me_text,
     #academical_text,
     #professional_text,
