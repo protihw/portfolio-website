@@ -153,6 +153,30 @@ header>nav>div {
     background-color: #333;
 }
 
+/* English Icon */
+#content2>div:nth-child(1)>div:nth-child(1) {
+    background-image: url("../icons/reino-unido.png");
+} 
+
+/* English Skill*/
+#content2>div:nth-child(1)>div:nth-child(3)>div {
+    width: 60%;
+    height: 100%;
+    background-color: #333;
+}
+
+/* Spanish Icon */
+#content2>div:nth-child(2)>div:nth-child(1) {
+    background-image: url("../icons/espanha.png");
+} 
+
+/* Spanish Skill*/
+#content2>div:nth-child(2)>div:nth-child(3)>div {
+    width: 30%;
+    height: 100%;
+    background-color: #333;
+}
+
 footer>div {
     background-color: #333;
     color: #fff;
