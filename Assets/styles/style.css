@@ -46,6 +46,7 @@ header>nav>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
     color: white;
     background-color: #333;
     width: 8vw;

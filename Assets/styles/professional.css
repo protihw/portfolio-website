@@ -43,7 +43,6 @@ html {
     display: none;
 }
 
-
 header>nav>div {
     display: flex;
     flex-direction: column;

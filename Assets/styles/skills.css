@@ -68,6 +68,10 @@ header>nav>div {
     padding: 5vh 15vw;
 }
 
+#main_content>section>h2 {
+    text-align: center;
+}
+
 #main_content>section>div {
     display: flex;
     align-items: center;
