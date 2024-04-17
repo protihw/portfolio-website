@@ -25,13 +25,20 @@ li {
     list-style-type: none;
 }
 
-body {
+body, html {
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 0.9rem;
     line-height: 1.8rem;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+#about_me_icon,
+#academical_icon,
+#professional_icon,
+#skills_icon {
+    display: none;
 }
 
 header>nav>div {
@@ -93,6 +100,7 @@ footer>div {
     #main_content {
         grid-template-columns: repeat(1, 1fr);
         position: static;
+        margin: 0 auto;
     }
 
     header>nav>div {
@@ -110,5 +118,21 @@ footer>div {
         justify-content: space-between;
         gap: 1rem;
         margin: 0 5vh;
+    }
+}
+
+@media (max-width: 590px) {
+    #about_me_text,
+    #academical_text,
+    #professional_text,
+    #skills_text {
+        display: none;
+    }
+
+    #about_me_icon,
+    #academical_icon,
+    #professional_icon,
+    #skills_icon {
+        display: block;
     }
 }
