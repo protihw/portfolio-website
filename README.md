@@ -23,8 +23,8 @@ Passos para instalar e configurar o ambiente de desenvolvimento:
 
 ## Imagens
 
-![image](https://github.com/protihw/portfolio-website/assets/69305991/d9557658-c126-47d1-b773-7d40afac41ed)
 ![image](https://github.com/protihw/portfolio-website/assets/69305991/2420466b-4932-49e3-acd8-74025cf96d1a)
+![image](https://github.com/protihw/portfolio-website/assets/69305991/d9557658-c126-47d1-b773-7d40afac41ed)
 
 ## Funcionalidades
 
